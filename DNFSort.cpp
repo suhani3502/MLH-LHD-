@@ -1,7 +1,7 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-void swap(int arr , int i , int j){
+void swap(int arr[] , int i , int j){
     int temp=arr[i];
     arr[i]=arr[j];
     arr[j]=temp;
@@ -16,11 +16,11 @@ void dnfsort(int arr[], int n){
 
     while (mid<=high){
 
-        if (arr(mid)==0){
+        if (arr[mid]==0){
             swap(arr , low , mid);
             low++,mid++;
 
-        }else if (arr(mid)==1){
+        }else if (arr[mid]==1){
             mid++;
 
         }else{
@@ -34,6 +34,9 @@ int main(){
     int arr[]={1,0,2,2,0,0,1,0,2};
     dnfsort(arr,9);
 
-    for(int=0,i<9,i++);
-    cout<<arr[i]<<" ";
+    for(int i=0;i<9;i++){
+       cout<<arr[i]<<" "; 
+    }
+    return 0;
+    
 }
