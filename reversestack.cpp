@@ -36,7 +36,7 @@ int main(){
     st.push(3);
     st.push(4);
 
-    reverse(st);
+    reverse(st); //this is the main func which is reversing , commenting this will give original stack.
     while(!st.empty()){
         cout<<st.top()<<" ";
         st.pop();
